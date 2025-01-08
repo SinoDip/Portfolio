@@ -37,8 +37,12 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import sino_logo from "./sinoLogo.png";
 import logosino from "./logosino.png";
+import logosino_dark from "./logosino_dark.png";
+import Platenhoes from "./platenhoes.jpg";
 
 export const assets = {
+  Platenhoes,
+  logosino_dark,
   logosino,
   sino_logo,
   user_image,

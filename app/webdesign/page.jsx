@@ -1,14 +1,14 @@
 "use client";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Services from "./components/Services";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import React from "react";
+import { assets } from "@/assets/assets";
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Mainweb from "../components/webdesign_components/Mainweb";
+import Subheader from "../components/Subheader";
 import { useEffect, useState } from "react";
 
-export default function Home() {
+export default function Webdesign() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
@@ -32,16 +32,13 @@ export default function Home() {
       localStorage.theme = "";
     }
   }, [isDarkMode]);
-
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}></Navbar>
-      <Header isDarkMode={isDarkMode}></Header>
-      <About isDarkMode={isDarkMode}></About>
-      <Services isDarkMode={isDarkMode}></Services>
-      <Work isDarkMode={isDarkMode}></Work>
-      <Contact isDarkMode={isDarkMode}></Contact>
-      <Footer isDarkMode={isDarkMode}></Footer>
+      <Subheader></Subheader>
+      <Mainweb></Mainweb>
+      <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 }
