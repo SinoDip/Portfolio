@@ -26,7 +26,7 @@ const Mainweb = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo sm:mt-[90%] lg:mt-4"
       >
-        Let's start here
+        Let's start here //adjust to text align left
       </motion.h2>
 
       {/* Project 1 */}

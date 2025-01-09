@@ -6,13 +6,22 @@ import { motion } from "motion/react";
 const Subheader = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-[70vh] flex flex-col items-center justify-center gap-4">
+      <motion.div
+        className=""
+        initial={{ y: 80, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+      >
+        <Image src={assets.hand_icon} alt=""></Image>
+      </motion.div>
+
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         className=" text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
-        Welcome to my portfolio.
+        My portfolio.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
