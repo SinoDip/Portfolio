@@ -3,30 +3,35 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { assets } from "@/assets/assets"; // Assuming your images are stored here
 
-const Mainweb = () => {
+const Mainweb = ({ isDarkMode, setIsdarkMode }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="about"
-      className="w-full px-[12%] py-[0%] scroll-mt-20  md:pb-[2%]"
+      className="w-full px-[12%] py-[0%] scroll-mt-20  md:pb-[2%] "
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className=" mb-2 text-lg font-Ovo"
       >
-        My web development projects
+        My Graphic Design projects:
       </motion.h4>
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo sm:mt-[90%] lg:mt-4"
+        className=" flex text-5xl font-Ovo sm:mt-[90%] lg:mt-4 gap-5 items-center pb-5 border-b-2 border-gray-700/20"
       >
-        Let's start here //adjust to text align left
+        Let's start here{" "}
+        <Image
+          src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+          alt=""
+          className=" w-6"
+        ></Image>
       </motion.h2>
 
       {/* Project 1 */}

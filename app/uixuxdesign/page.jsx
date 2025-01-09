@@ -4,8 +4,8 @@ import { assets } from "@/assets/assets";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Mainweb from "../components/comp_web/Mainweb";
-import Subheader from "../components/comp_web/Subheader";
+import Mainweb from "../components/comp_UI/Mainweb";
+import Subheader from "../components/comp_UI/Subheader";
 import { useEffect, useState } from "react";
 
 export default function Webdesign() {
@@ -35,8 +35,8 @@ export default function Webdesign() {
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}></Navbar>
-      <Subheader></Subheader>
-      <Mainweb></Mainweb>
+      <Subheader isDarkMode={isDarkMode}></Subheader>
+      <Mainweb isDarkMode={isDarkMode}></Mainweb>
       <Contact></Contact>
       <Footer></Footer>
     </>

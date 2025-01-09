@@ -2,6 +2,7 @@
 
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
@@ -34,40 +35,40 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}
       >
-        <a href="#top">
+        <Link href="/">
           <Image
             src={isDarkMode ? assets.logosino_dark : assets.logosino}
             alt=""
             className="w-28 cursor-pointer mr-14"
           />
-        </a>
+        </Link>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap lg:gap-8 rounded-full px-12 py-3 transition duration-500 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <Link className="font-Ovo" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#about">
+            <Link className="font-Ovo" href="/#about">
               About me
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#services">
+            <Link className="font-Ovo" href="/#services">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
+            <Link className="font-Ovo" href="/#work">
               My work
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
+            <Link className="font-Ovo" href="/#contact">
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -112,29 +113,29 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             ></Image>
           </div>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#top">
+            <Link className="font-Ovo" onClick={closeMenu} href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#about">
+            <Link className="font-Ovo" onClick={closeMenu} href="/#about">
               About me
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#services">
+            <Link className="font-Ovo" onClick={closeMenu} href="/#services">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#work">
+            <Link className="font-Ovo" onClick={closeMenu} href="/#work">
               My work
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#contact">
+            <Link className="font-Ovo" onClick={closeMenu} href="/#contact">
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
