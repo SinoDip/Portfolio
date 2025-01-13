@@ -8,14 +8,14 @@ const About = ({ isDarkMode }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.4 }}
       id="about"
       className=" w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.2, delay: 0.3 }}
         className=" text-center mb-2 text-lg font-Ovo"
       >
         Introduction
@@ -23,7 +23,7 @@ const About = ({ isDarkMode }) => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.2, delay: 0.5 }}
         className=" text-center text-5xl font-Ovo"
       >
         About me{" "}
@@ -32,37 +32,42 @@ const About = ({ isDarkMode }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
       >
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
           className=" w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.user_image}
+            src={assets.sinopic}
             alt="user"
-            className=" w-full rounded-3xl"
+            className=" w-full top rounded-3xl"
           ></Image>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           className=" flex-1"
         >
           <p className=" mb-10 max-w-2xl font-Ovo">
-            I am an experienced Frontend Developer with over a decade of
-            professional expertise in the field. Throughout my career, I have
-            had the privilege of collaborating with prestigious organizations,
-            contributing to their success and growth.
+            I’m a passionate frontend developer with 2-3 years of experience,
+            gained through my student company. Currently, I’m studying Software
+            Engineering at AP Hogeschool, and before that, I studied Graphic
+            Design at the same school. My journey into the tech world started in
+            high school, where I focused on Multimedia, which sparked my
+            interest in both design and development. With this diverse
+            background, I bring a creative and user-focused approach to building
+            responsive websites and applications. I’m always eager to learn and
+            grow, applying my skills to create impactful digital experiences.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
@@ -74,7 +79,7 @@ const About = ({ isDarkMode }) => {
                 <Image
                   src={isDarkMode ? iconDark : icon}
                   alt={title}
-                  className=" w-7 mt-3"
+                  className=" w-7 mt-2"
                 ></Image>
                 <h3 className=" my-4 font-semibold text-gray-700 dark:text-white">
                   {title}
@@ -88,7 +93,7 @@ const About = ({ isDarkMode }) => {
           <motion.h4
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.3, delay: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
             className=" my-6 text-gray-700 font-Ovo dark:text-white/80"
           >
             Tools i Use
@@ -96,7 +101,7 @@ const About = ({ isDarkMode }) => {
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.5 }}
+            transition={{ duration: 0.3, delay: 0.9 }}
             className="flex items-center gap-3 sm:gap-5"
           >
             {toolsData.map((tool, index) => (

@@ -16,7 +16,7 @@ const Services = () => {
       <div className="grid grid-cols-auto gap-6 my-10">
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
-            className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
+            className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
             key={index}
           >
             <Image src={icon} alt="" className="w-10"></Image>
@@ -26,7 +26,10 @@ const Services = () => {
             <p className=" text-sm text-gray-600 leading-5 dark:text-white/80">
               {description}
             </p>
-            <a className="flex items-center gap-2 text-sm mt-5" href={link}>
+            <a
+              className="flex items-center gap-2 text-sm mt-5 hover:scale-105 duration-500 hover:font-semibold hover:underline"
+              href={link}
+            >
               Read more{" "}
               <Image src={assets.right_arrow} alt="" className="w-4"></Image>
             </a>

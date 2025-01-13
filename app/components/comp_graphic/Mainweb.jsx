@@ -24,7 +24,7 @@ const Mainweb = ({ isDarkMode, setIsdarkMode }) => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className=" flex text-5xl font-Ovo sm:mt-[90%] lg:mt-4 gap-5 items-center pb-5 border-b-2 border-gray-700/20"
+        className=" flex text-5xl font-Ovo sm:mt-[90%] lg:mt-4  dark:border-white gap-5 items-center pb-5 border-b-2 border-gray-700/20"
       >
         Let's start here{" "}
         <Image

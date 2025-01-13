@@ -15,6 +15,7 @@ export default {
         lightHover: "#fcf4ff",
         darkHover: "#2a004a",
         darkTheme: "#11001F",
+        themeColor: "#f1f5f9",
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],

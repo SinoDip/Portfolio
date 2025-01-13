@@ -10,7 +10,7 @@ const Subheader = () => {
         className=""
         initial={{ y: 80, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
       >
         <Image src={assets.hand_icon} alt=""></Image>
       </motion.div>
@@ -18,15 +18,15 @@ const Subheader = () => {
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
         className=" text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
       >
-        Welcome to My portfolio.
+        Welcome to My development portfolio.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
+        transition={{ duration: 0.3, delay: 0.7 }}
         className=" max-w-2xl mx-auto font-Ovo"
       >
         Here u will find some of my projects
@@ -36,7 +36,7 @@ const Subheader = () => {
         <motion.a
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
+          transition={{ duration: 0.3, delay: 0.9 }}
           href="#contact"
           className=" px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent"
         >
@@ -46,7 +46,7 @@ const Subheader = () => {
         <motion.a
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
+          transition={{ duration: 0.3, delay: 1.2 }}
           href="/sample-resume.pdf"
           download
           className=" px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"

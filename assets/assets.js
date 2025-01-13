@@ -39,8 +39,17 @@ import sino_logo from "./sinoLogo.png";
 import logosino from "./logosino.png";
 import logosino_dark from "./logosino_dark.png";
 import Platenhoes from "./platenhoes.jpg";
-
+import merakiAntwerp from "./ipad-meraki.png";
+import shopify from "./shopify-icon.webp";
+import nextjs from "./nextjs-icon.png";
+import sinopic from "./sinofoto.avif";
+import wordpress from "./wordpress-icon.png";
 export const assets = {
+  wordpress,
+  sinopic,
+  nextjs,
+  shopify,
+  merakiAntwerp,
   Platenhoes,
   logosino_dark,
   logosino,
@@ -156,11 +165,17 @@ export const infoList = [
     description: "Built more than 5 projects",
   },
 ];
+export const merakiAntwerpList = [
+  {
+    image: "./merakiAntwerp.png",
+  },
+];
 
 export const toolsData = [
   assets.vscode,
-  assets.firebase,
-  assets.mongodb,
   assets.figma,
   assets.git,
+  assets.shopify,
+  assets.nextjs,
+  assets.wordpress,
 ];
