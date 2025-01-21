@@ -42,7 +42,7 @@ const About = ({ isDarkMode }) => {
           className=" w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
-            src={assets.sinopic}
+            src={assets.user_image}
             alt="user"
             className=" w-full top rounded-3xl"
           ></Image>

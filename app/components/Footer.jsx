@@ -1,3 +1,5 @@
+"use client";
+
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
@@ -18,7 +20,9 @@ const Footer = ({ isDarkMode }) => {
             alt=""
             className="w-6"
           ></Image>
-          sinosamateh@gmail.com
+          <a href="mailto:recipient@example.com?subject=Hello">
+            sinosamateh@gmail.com
+          </a>
         </div>
       </div>
 
