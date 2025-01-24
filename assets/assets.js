@@ -1,4 +1,4 @@
-import user_image from "./user-image.png";
+import user_image from "./user-image.jpg";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
@@ -300,7 +300,7 @@ export const infoList = [
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "Graphical and digital media, IT & Software",
   },
   {
     icon: assets.project_icon,

@@ -9,8 +9,8 @@ const Services = () => {
       <h2 className=" text-center text-5xl font-Ovo">My services </h2>
 
       <p className=" text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I am a frontend developer from Brussels, Belgium with 3 years of
-        experience in multiple companies like ..... , .....
+        I am a frontend developer from Antwerp/ Brussels, Belgium with 3 years
+        of experience
       </p>
 
       <div className="grid grid-cols-auto gap-6 my-10">
