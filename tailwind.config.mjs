@@ -24,6 +24,8 @@ export default {
       boxShadow: {
         black: "4px 4px 0 #000",
         white: "4px 4px 0 #fff",
+        navShadowBlack: "0px 7px 0px -5px rgba(255,255,255,0.72)",
+        navShadowWhite: "0px 7px 0px -5px rgba(38,38,38,0.72)",
       },
       gridTemplateColumns: {
         auto: "repeat(auto-fit, minmax(200px, 1fr))",

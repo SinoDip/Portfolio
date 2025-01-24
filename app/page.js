@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import CursorBall from "./CursorBall";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
 
   return (
     <>
+      <CursorBall />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}></Navbar>
       <Header isDarkMode={isDarkMode}></Header>
       <About isDarkMode={isDarkMode}></About>

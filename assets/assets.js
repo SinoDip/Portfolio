@@ -433,6 +433,20 @@ export const webList = [
     link: "https://visionary-speculoos-8c7bc5.netlify.app/",
   },
 ];
+export const navItems = [
+  { title: "Home", link: "/#" },
+  { title: "About me", link: "/#about" },
+  { title: "Services", link: "/#services" },
+  { title: "My work", link: "/#work" },
+  { title: "Contact me", link: "/#contact" },
+];
+
+export const mobilaNavItems = [
+  { title: "Home", link: "/#" },
+  { title: "About me", link: "/#about" },
+  { title: "Services", link: "/#services" },
+  { title: "My work", link: "/#work" },
+];
 
 /*{
   title: "My portfolio - Nextjs 15",
