@@ -10,31 +10,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Mainweb = () => {
-  // State to manage modal visibility and image slider
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentProject, setCurrentProject] = useState(null); // To store the current project data
+  const [currentProject, setCurrentProject] = useState(null);
 
-  // Function to open modal with images and index
   const openModal = (images, index, project) => {
     setCurrentImages(images);
     setCurrentIndex(index);
-    setCurrentProject(project); // Save the project data
+    setCurrentProject(project);
     setModalOpen(true);
   };
 
-  // Function to close modal
-  const closeModal = () => {
-    setModalOpen(false);
-  };
+  const closeModal = () => setModalOpen(false);
 
-  // Function to handle clicks outside the modal (background click)
   const handleModalClick = (e) => {
-    // If the click is on the background (not on the image), close the modal
-    if (e.target.classList.contains("modal-background")) {
-      closeModal();
-    }
+    if (e.target.classList.contains("modal-background")) closeModal();
   };
 
   return (
@@ -69,10 +60,11 @@ const Mainweb = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className={`flex w-full flex-col lg:flex-row ${
             index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-          } items-center gap-10 mb-40 mt-20 md:gap-20`}
+          } items-center gap-10 ${
+            index === webList.length - 1 ? "mb-20" : "mb-40"
+          } mt-20 md:gap-20`}
           key={index}
         >
-          {/* Text Section */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -91,7 +83,7 @@ const Mainweb = () => {
                 src={assets.arrow_icon}
                 alt="arrow"
                 className="w-3 h-3 ml-3"
-              ></Image>
+              />
             </a>
             <motion.ul
               initial={{ opacity: 0 }}
@@ -111,28 +103,26 @@ const Mainweb = () => {
             </motion.ul>
           </motion.div>
 
-          {/* Image Section - Click to Open Modal/Slider */}
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full max-w-[300px] sm:max-w-[400px] rounded-2xl cursor-pointer" // Smaller image size
+            className="w-full max-w-[300px] sm:max-w-[400px] rounded-2xl cursor-pointer"
           >
             <Image
               src={project.images[0]}
               alt={project.title}
               className="w-full rounded-2xl "
-              onClick={() => openModal(project.images, 0, project)} // Open modal with all images and starting index 0
+              onClick={() => openModal(project.images, 0, project)}
             />
           </motion.div>
         </motion.div>
       ))}
 
-      {/* Modal Slideshow - Shows when modalOpen is true */}
       {modalOpen && (
         <div
           className="modal-background fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-70"
-          onClick={handleModalClick} // Listen for background click
+          onClick={handleModalClick}
         >
           <div className="relative w-full max-w-4xl p-5">
             <Swiper
@@ -147,7 +137,6 @@ const Mainweb = () => {
             >
               {currentImages.map((imgSrc, idx) => {
                 if (currentProject?.title === "Ember - Publication") {
-                  // If it's "Ember", render two images per slide
                   if (idx % 2 === 0) {
                     return (
                       <SwiperSlide key={idx}>
@@ -157,7 +146,6 @@ const Mainweb = () => {
                             alt={`Slide ${idx + 1}`}
                             className="w-1/2 max-h-[80vh] object-contain rounded-xl"
                           />
-                          {/* Check if the next image exists before rendering */}
                           {currentImages[idx + 1] && (
                             <Image
                               src={currentImages[idx + 1]}
@@ -169,10 +157,9 @@ const Mainweb = () => {
                       </SwiperSlide>
                     );
                   }
-                  return null; // Skip odd indices
+                  return null;
                 }
 
-                // For other projects, render one image per slide
                 return (
                   <SwiperSlide key={idx}>
                     <Image

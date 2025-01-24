@@ -54,7 +54,7 @@ export default function WorkDetailPage() {
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}></Navbar>
-      <div className="pt-[10%] pb-[10%] container mx-auto  px-4 lg:px-10">
+      <div className=" pt-20 md:pt-[10%] pb-[10%] container mx-auto  px-4 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Side: Project Image */}
           <div
