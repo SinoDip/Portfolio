@@ -36,17 +36,9 @@ npm run dev  # or yarn dev
 
 The site will be available at `http://localhost:3000`
 
-## 🚀 Deployment
-
-This project can be easily deployed on **Vercel**:
-
-1. Push your code to GitHub.
-2. Connect your repository to [Vercel](https://vercel.com/).
-3. Deploy with one click!
-
 ## 📷 Screenshots
 
-_(Include some screenshots of your portfolio in action)_
+![Portfolio Screenshot](screenshot_white.png, screenshot_black.png)
 
 ## 🙌 Contributing
 
