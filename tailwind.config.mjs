@@ -12,7 +12,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightHover: "#fcf4ff",
+        lightHover: "#f4f7ff",
         darkHover: "#2a004a",
         darkTheme: "#11001F",
         themeColor: "#f1f5f9",

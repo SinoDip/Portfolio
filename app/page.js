@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <CursorBall />
+      <CursorBall  />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}></Navbar>
       <Header isDarkMode={isDarkMode}></Header>
       <About isDarkMode={isDarkMode}></About>

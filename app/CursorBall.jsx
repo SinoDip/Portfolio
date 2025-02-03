@@ -42,6 +42,8 @@ const CursorBall = () => {
 
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
+
+    // Drawing variables
     let isDrawing = false;
 
     // Draw on the canvas as the cursor moves
@@ -50,7 +52,7 @@ const CursorBall = () => {
         // Start a new path for each drawing
         ctx.beginPath();
         ctx.arc(event.clientX, event.clientY, 2, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(63, 115, 218, 0.5)";
+        ctx.fillStyle = "rgba(63, 115, 218, 0.5)"; // Semi-transparent color for the drawing
         ctx.fill();
       }
     };

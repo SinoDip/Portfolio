@@ -245,10 +245,12 @@ export const workData = [
   },
   {
     id: "photography-site", // Unique identifier for dynamic route
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-    tools: graphicData,
+    title: "Positivus Web",
+    description: "Frontend Project",
+    detailedDescription:
+      "This frontend project is built using an external Figma design file named Positivus, ensuring a pixel-perfect and responsive implementation. The project focuses on clean UI/UX, smooth interactions, and modern web technologies to bring the design to life. Every component has been carefully crafted to match the original Figma prototype, delivering a seamless and visually appealing user experience.",
+    bgImage: "/macbook-mockup.png",
+    tools: appTools,
   },
   {
     id: "ui-ux-designing", // Unique identifier for dynamic route
@@ -447,12 +449,3 @@ export const mobilaNavItems = [
   { title: "Services", link: "/#services" },
   { title: "My work", link: "/#work" },
 ];
-
-/*{
-  title: "My portfolio - Nextjs 15",
-  description:
-    "This personal portfolio is built with Next.js 15 and styled using Tailwind CSS. Leveraging server-side rendering (SSR) and static site generation (SSG), the site ensures fast loading times and a smooth user experience. Tailwind's utility-first classes allowed for rapid, responsive design customization. I also used Next.js Image Optimization for high-quality, fast-loading visuals. This portfolio highlights my work and showcases my ability to create modern, high-performance web applications with the latest technologies.",
-  images: [assets.porfoliomockup],
-  tools: portfolioTools,
-  link: "./",
-},*/
