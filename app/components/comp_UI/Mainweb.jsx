@@ -10,13 +10,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Mainweb = ({ isDarkMode, setIsdarkMode }) => {
-  // State to manage modal visibility and image slider
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentProject, setCurrentProject] = useState(null); // To store the current project data
 
-  // Function to open modal with images and index
   const openModal = (images, index, project) => {
     setCurrentImages(images);
     setCurrentIndex(index);
@@ -29,7 +27,6 @@ const Mainweb = ({ isDarkMode, setIsdarkMode }) => {
     setModalOpen(false);
   };
 
-  // Function to handle clicks outside the modal (background click)
   const handleModalClick = (e) => {
     // If the click is on the background (not on the image), close the modal
     if (e.target.classList.contains("modal-background")) {
@@ -86,6 +83,10 @@ const Mainweb = ({ isDarkMode, setIsdarkMode }) => {
           >
             <h1 className="text-3xl py-5">{project.title}</h1>
             <p className="mb-1 max-w-2xl font-Ovo">{project.description}</p>
+
+            <a href={project.link} target="_blank" className="text-blue-600">
+              {project.linkText}
+            </a>
             <motion.ul
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

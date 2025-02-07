@@ -30,21 +30,13 @@ const Footer = ({ isDarkMode }) => {
         <p>© 2025 Sino Samateh. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="">
+            <a target="_blank" href="https://github.com/SinoDip">
               Github
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://be.linkedin.com/in/sino-samateh-799b41230"
-            >
+            <a target="_blank" href="https://www.linkedin.com/in/sinosamateh">
               LinkedIn
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="">
-              Twitter
             </a>
           </li>
         </ul>

@@ -35,7 +35,6 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-import sino_logo from "./sinoLogo.png";
 import logosino from "./logosino.png";
 import logosino_dark from "./logosino_dark.png";
 import Platenhoes from "./platenhoes.jpg";
@@ -86,8 +85,20 @@ import latesi_mockup from "./latesi_mockup.png";
 import porfoliomockup from "./portfoliodark.png";
 import tailwind from "./Tailwind_CSS_Logo.png";
 import react from "./React-icon.png";
+import macmockup from "./macbook-mockup.png";
+import aora from "./aora-mockup.png";
+import sal1 from "./salame1.png";
+import sal2 from "./salame2.png";
+import sal3 from "./salame3.png";
+import sal4 from "./salame4.png";
 
 export const assets = {
+  sal1,
+  sal2,
+  sal3,
+  sal4,
+  aora,
+  macmockup,
   react,
   tailwind,
   porfoliomockup,
@@ -138,7 +149,6 @@ export const assets = {
   Platenhoes,
   logosino_dark,
   logosino,
-  sino_logo,
   user_image,
   code_icon,
   code_icon_dark,
@@ -244,19 +254,26 @@ export const workData = [
     tools: appTools,
   },
   {
-    id: "photography-site", // Unique identifier for dynamic route
+    id: "positivus", // Unique identifier for dynamic route
     title: "Positivus Web",
     description: "Frontend Project",
     detailedDescription:
       "This frontend project is built using an external Figma design file named Positivus, ensuring a pixel-perfect and responsive implementation. The project focuses on clean UI/UX, smooth interactions, and modern web technologies to bring the design to life. Every component has been carefully crafted to match the original Figma prototype, delivering a seamless and visually appealing user experience.",
-    bgImage: "/macbook-mockup.png",
+    linkText: "View the live project",
+    link: "https://positivus-a.netlify.app/",
+    bgImage: "/work-3.png",
     tools: appTools,
   },
   {
-    id: "ui-ux-designing", // Unique identifier for dynamic route
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    id: "apple-clone", // Unique identifier for dynamic route
+    title: "Apple Clone",
+    description: "Frontend Project",
+    detailedDescription:
+      "This project is a clone of the Apple website, built with modern web technologies for a smooth and interactive experience. Using Vite for a fast development environment, Tailwind CSS for sleek and responsive styling, and GSAP for smooth animations, the site closely replicates Apple’s signature design and fluid transitions. The result is a visually polished and highly performant web experience.",
     bgImage: "/work-4.png",
+    finished: "still in progress....",
+    linkText: "View the live project",
+    link: "https://gsapiphone.netlify.app/",
     tools: graphicData,
   },
 ];
@@ -407,6 +424,16 @@ export const uxuilist = [
     images: [assets.dash1, assets.dash2, assets.dash3, assets.dash4],
     tools: uixuxDate,
   },
+  {
+    title: "SalaMe - UX/UI Design for a location based quiz app",
+    description:
+      "Salame is a location-based game designed with an engaging and intuitive UX/UI. The interface blends interactive maps with sleek, user-friendly navigation, ensuring a seamless experience as players explore real-world locations. The design focuses on accessibility, dynamic visuals, and immersive gameplay elements to enhance user engagement. Unfortunately, the app code was lost, but the UX/UI concepts remain as a testament to the project’s creative and functional design.",
+
+    images: [assets.sal1, assets.sal2, assets.sal3, assets.sal4],
+    linkText: "View the full project on figma",
+    link: "https://www.figma.com/design/ABMc9LuXDQr25WS0Cfy0AD/prototype-2.O?node-id=0-1&m=dev&t=WPnxdhOBdu5Uv8UN-1",
+    tools: uixuxDate,
+  },
 ];
 
 export const webList = [
@@ -432,9 +459,29 @@ export const webList = [
       "This personal portfolio is built with Next.js 15 and styled using Tailwind CSS. Leveraging server-side rendering (SSR) and static site generation (SSG), the site ensures fast loading times and a smooth user experience. Tailwind's utility-first classes allowed for rapid, responsive design customization. I also used Next.js Image Optimization for high-quality, fast-loading visuals. This portfolio highlights my work and showcases my ability to create modern, high-performance web applications with the latest technologies.",
     images: [assets.porfoliomockup],
     tools: portfolioTools,
-    link: "https://visionary-speculoos-8c7bc5.netlify.app/",
+    link: "https://portfoliosino.netlify.app/",
+  },
+  {
+    title: "Positivus - Nextjs 15",
+    description:
+      "This frontend project is built using an external Figma design file named Positivus, ensuring a pixel-perfect and responsive implementation. The project focuses on clean UI/UX, smooth interactions, and modern web technologies to bring the design to life. Every component has been carefully crafted to match the original Figma prototype, delivering a seamless and visually appealing user experience.",
+    images: [assets.macmockup],
+    tools: portfolioTools,
+    link: "https://positivus-a.netlify.app/",
   },
 ];
+
+export const appData = [
+  {
+    title: "Aora - AI Image Sharing App",
+    description:
+      "I developed an AI-powered image-sharing app using React Native and Expo, designed to offer a seamless and modern user experience. The app integrates NativeWind for responsive and dynamic styling, ensuring a sleek interface across devices. Authentication and secure user management are powered by Appwrite, which also handles the robust database for storing and retrieving shared images efficiently. This project showcases the blend of cutting-edge technology and clean design to create an intuitive platform for sharing AI-generated images.",
+    images: [assets.aora],
+    tools: appTools,
+    link: "https://github.com/SinoDip/aora",
+  },
+];
+
 export const navItems = [
   { title: "Home", link: "/#" },
   { title: "About me", link: "/#about" },
