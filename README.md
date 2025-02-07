@@ -38,8 +38,8 @@ The site will be available at `http://localhost:3000`
 
 ## 📷 Screenshots
 
-![Portfolio Screenshot](screenshot_white.png)
-![Portfolio Screenshot](screenshot_black.png)
+<img width="1435" alt="screenshot_black" src="https://github.com/user-attachments/assets/583b3848-2378-4c13-aead-7316bf098188" />
+<img width="1435" alt="screenshot_white" src="https://github.com/user-attachments/assets/1dee32ff-c21e-4175-8f6a-59c76149818d" />
 
 ## 🙌 Contributing
 
