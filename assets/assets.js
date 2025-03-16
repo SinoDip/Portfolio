@@ -91,8 +91,10 @@ import sal1 from "./salame1.png";
 import sal2 from "./salame2.png";
 import sal3 from "./salame3.png";
 import sal4 from "./salame4.png";
+import osirify from "../public/work-1.png";
 
 export const assets = {
+  osirify,
   sal1,
   sal2,
   sal3,
@@ -233,13 +235,13 @@ export const uixuxDate = [assets.figma];
 
 export const workData = [
   {
-    id: "holiday-card", // Unique identifier for dynamic route
-    title: "Holiday-card ",
-    description: "Graphic Design",
+    id: "Osirify", // Unique identifier for dynamic route
+    title: "Osirify ",
+    description: "Social Media App",
     detailedDescription:
-      "I designed a custom graphic holiday card for Regimo, blending festive cheer with their unique brand identity. The card features a harmonious mix of vibrant holiday colors and the company’s logo, creating a professional yet joyful design. It includes intricate details like snowflakes, subtle textures, and warm typography to convey a heartfelt message of gratitude and celebration. This holiday card not only served as a thoughtful gesture to clients and employees but also reinforced the company’s commitment to creativity and meaningful connections during the festive season.",
+      " Osirify is a sleek, full-featured social media application designed to provide a seamless and engaging user experience. Built using Next.js for the frontend, Prisma as the ORM for efficient data management, and Tailwind CSS for rapid and responsive UI development, Osirify is optimized for both performance and scalability. ",
     bgImage: "/work-1.png",
-    tools: graphicData,
+    tools: appTools,
   },
   {
     id: "react-native", // Unique identifier for dynamic route
@@ -281,7 +283,7 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
+    title: "Web Development",
     description: "Web development is the process of building, programming...",
     link: "/webdesign",
   },
@@ -437,6 +439,14 @@ export const uxuilist = [
 ];
 
 export const webList = [
+  {
+    title: "Osirify - Social Media App",
+    description:
+      "Osirify is a sleek, full-featured social media application designed to provide a seamless and engaging user experience. Built using Next.js for the frontend, Prisma as the ORM for efficient data management, and Tailwind CSS for rapid and responsive UI development, Osirify is optimized for both performance and scalability.",
+    images: [assets.osirify],
+    tools: appTools,
+    link: "https://osirify-project.vercel.app/",
+  },
   {
     title: "Meraki Webshop – A Stylish Shopping Experience",
     description:
